@@ -157,6 +157,41 @@ namespace day14LinkedLst
             }
         }
 
+         public void orderNodes()
+        {
+            if (this.size < 1)
+                Console.WriteLine("There are no nodes in the linked list");
+
+            else
+            {
+                Node current = this.head;
+               
+
+                for (int i = 0; i < this.size-2; i++)
+                {
+                    for (int j = 0; j < this.size - 2; j++)
+                    {
+                        while (current.next != null)
+                        {
+                            if (current.data > current.next.data)
+                            {
+                                int temp = current.next.data;
+                                current.next.data = current.data;
+                                current.data = temp;
+                            }
+                            current = current.next;
+                    }   }
+                }
+                current = this.head;
+                Console.WriteLine("sorted order is :");
+                for (int i = 0; i < this.size; i++)
+                {
+                    Console.WriteLine("Node " + current.data + " is at location " + i);
+                    current = current.next;
+                }
+             
+            }
+        }
 
             public int getListSize()
         {
