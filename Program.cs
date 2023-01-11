@@ -14,8 +14,8 @@ namespace day14LinkedLst
             list.printNodes();
             
            
-            Console.WriteLine("Deleting first node");
-            list.deleteFirstNode();
+            Console.WriteLine("Deleting last node");
+            list.deleteLastNode();
             list.printNodes();
              
         }
