@@ -103,6 +103,23 @@ namespace day14LinkedLst
             }
         }
         
+         public void findNode(int data)
+        {
+            Node node = this.head;
+            bool found = false;
+            for (int i = 0; i < size; i++)
+            {
+                if (node.data==data)
+                {
+                    Console.WriteLine("data " + data + " was found at location " + i + " in the linked list");
+                    found = true;
+                }
+                node = node.next;
+            }
+
+            if (!found)
+                Console.WriteLine("data " + data + " was not found in the Linked list");
+        }
         
           public void printNodes()
         {
