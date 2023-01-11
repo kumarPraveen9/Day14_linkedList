@@ -69,6 +69,19 @@ namespace day14LinkedLst
             }
         }
         
+        public void deleteFirstNode()
+        {
+            if (head != null)
+            {
+                this.head = this.head.next;
+                this.size--;
+            }
+            else
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+        }
+        
         
           public void printNodes()
         {
