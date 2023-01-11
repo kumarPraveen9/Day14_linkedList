@@ -82,6 +82,27 @@ namespace day14LinkedLst
             }
         }
         
+         public void deleteLastNode()
+        {
+            Node currentNode = this.head;
+            if (size == 1)
+            {
+                head = null;
+                size = 0;
+            }
+            else
+            {
+                Node prevNode = null;
+                while (currentNode.next != null)
+                {
+                    prevNode = currentNode;
+                    currentNode = currentNode.next;
+                }
+                prevNode.next = null;
+                this.size--;
+            }
+        }
+        
         
           public void printNodes()
         {
