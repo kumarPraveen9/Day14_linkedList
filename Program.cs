@@ -13,7 +13,7 @@ namespace day14LinkedLst
             list.insertNode(70);
             list.printNodes();
             
-            Console.WriteLine("Adding 25 at 2nd Location");
+            Console.WriteLine("Adding 30 at 1st Location");
             list.insertNth(30, 1);
             list.printNodes(); 
              
