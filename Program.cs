@@ -8,9 +8,9 @@ namespace day14LinkedLst
 
             Console.WriteLine("Current Size of the list is: " + list.getListSize());
 
-            list.insertNode(70);
-            list.insertNode(30);
             list.insertNode(56);
+            list.insertNode(30);
+            list.insertNode(70);
             list.printNodes();
         }
     }       
